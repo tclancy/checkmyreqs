@@ -7,7 +7,7 @@ from setuptools import setup, Command
 
 
 APP_NAME = 'checkmyreqs'
-VERSION = '0.3.1'
+VERSION = '0.3.2'
 
 # Grab requirments.
 with open('requirements.txt') as f:
@@ -56,6 +56,9 @@ settings.update(
     author_email='dustinrcollins@gmail.com',
     packages=['tests'],
     scripts=['checkmyreqs'],
+    console_scripts=[
+        'checkmyreqs=checkmyreqs:main',
+    ],
     url='https://github.com/dustinmm80/checkmyreqs',
     license='MIT',
     description='Check your project requirements for Python version compatibility',

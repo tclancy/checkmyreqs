@@ -29,7 +29,7 @@ except ImportError:
 
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-CLIENT = ServerProxy('http://pypi.python.org/pypi')
+CLIENT = ServerProxy('https://pypi.python.org/pypi')
 
 IGNORED_PREFIXES = ['#', 'git+', 'hg+', 'svn+', 'bzr+', '\n', '\r\n']
 
